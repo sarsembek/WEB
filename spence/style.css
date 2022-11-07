@@ -1,11 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+body{
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    background-color: #f0eeeb;
+}
 header{
     background-color: black;
     font-family: 'Cabin', sans-serif;
     color: white;
     text-align: center;
-    padding: 1px 0px;
+    padding: 0.03125em 0em;
+    display: block;
 }
 .main{
-    background-color: beige;
+    background-color: #f0eeeb;
+    font-family: 'Cabin', sans-serif;
+}
+.nav-bar{
+    display: flex;
+    padding-top: 3.125em;
+}
+.logo{
+    font-weight:900;
+    font-size: 1em;
+    padding-left: 12.5em;
+}
+.list{
+    font-size: 1em;
+    text-align: center;
+    display: inline;
+    align-items: center;
+    padding-left: 20.3125em;
+}
+div.list li{
+    display: inline;
+    margin: 0.625em;
+    
+}
+div.list li a{
+    color:black;
+    text-decoration: none;
+}
+#log{
+    padding-left: 25em;
+}
+#start{
+    background-color: black;
+    color: white;
+    padding: 1.25em;
+    border-radius: 0.625em;
+}
+.title{
+    display: grid;
+    padding-left: 12.5em;
+    grid-template-rows: 15em 3.125em auto;
+    grid-template-areas: 
+        "a e"
+        "b e"
+        "c e"
+        "d e";
+    grid-gap: 1em;
+    padding-top:2em;
+}
+div.title h1{
+    padding-top: 1em;
+    font-size: 4em;
+    grid-area: a;
+
+}
+div.title p{
+    color:#575243;
+    padding:1em 0 3em 0;
+    grid-area: b;
+}
+.list2{
+    grid-area: c;
+}
+div.list2 ul{
+    list-style-type: none;
+    display: inline;
+}
+div.list2 img{
+    padding:0.5em 0.5em 0.5em 0;
+    vertical-align: middle;
+}
+div.list2 p{
+    display: inline;
+}
+div.title input{
+    font-size: medium;
+    width: min-content;
+    border-radius: 0.5em;
+    border: 0.1em solid #bdbdbd;
+    background-color: #fff;
+    height: 3em;
+}
+.btn{
+    display: inline;
+    grid-area: d;
+}
+.start{
+    background-color: black;
+    width: max-content;
+    color: white;
+    height: 1em;
+    padding: 1.25em;
+    border-radius: 0.5em;
+    text-decoration: none;
+}
+.card img{
+    display:inline;
+    width:30em;
+    padding: 1em;
+}
+.img{
+    display: block;
+    padding: 2em;
+    margin-top: 10em;
+    background-color: #fff;
+}
+.img li{
+    list-style-type: none;
+    display: inline;
+    width: max-content;
+}
+.img img{
+    width: 8.5em;
+    padding: 1em;
 }
